@@ -18,8 +18,10 @@ body {
 }
 
 header {
-    border-bottom: 2px solid #FAE232;
     font-size: 40px;
+    background-image: linear-gradient(rgba(85, 22, 3, 0.3) 0%,
+            rgba(248, 103, 7, 0.6) 100%);
+    margin-top: 0%;
 }
 
 h2 {
