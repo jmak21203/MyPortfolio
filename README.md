@@ -6,3 +6,4 @@ It solves a pretty simple problem of giving a hiring manager or someone curious 
 
 This process has been painful but rewarding and educational. I have spent way more time on this than I will in the future. My understanding of flex boxes and how to properly format is exceptionally better now that when I started. I also learned about image in the html vs image in the background input via css. While learning this I also learned how you save your jpg files matters. After some research I learned there are ideal width x height properties based on where the image will sit in your website. 
 
+https://jmak21203.github.io/MyPortfolio/
