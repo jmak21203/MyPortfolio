@@ -43,20 +43,7 @@ nav ul li {
 /* 
 moves About Me Work and Contact to right of page
 .sidebar {
-    height: 200px;
-    width: 150px;
-    /* position: fixed; */
-/* top: 0;
-    left: 0;
-    padding-top: 40px; */
-
-/* .sidebar section {
-    padding: 8px;
-    font-size: 24px;
-    display: block;
-
-
-} */
+*/
 
 aside {
     width: 30%;
@@ -73,44 +60,49 @@ aside {
     font-size: 20px;
 }
 
-/*aligns photos and moves them to the center of the page*/
+/*creates the main create with flexbox*/
 .row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+
+}
+
+/*moves photos to center of box*/
+.justify-center {
     justify-content: center;
 }
 
 
-/*aligns pictures to justify within box*/
-.column {
-    /* flex: 1 0 100%; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+/*inputs background image and sets size parameters*/
+#top {
+    background-image: url("./image/workplaceholder5.jpg");
+    min-width: 75%;
+    min-height: 400px;
+    width: 75%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 32%;
 }
 
-/*picture size and adjustments*/
-.content {
-    max-width: 250px;
-    min-width: 250px;
-    Max-height: 250px;
-    min-height: 250px;
-    margin-top: -35px;
-    border: 3px solid var(--bright-sun);
-
+/*inputs additional background image and sets size parameters*/
+.normal-work {
+    background-image: url("./image/workplaceholder8.jpg");
+    min-width: 30%;
+    min-height: 400px;
+    width: 30%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-/*picture size and adjustments*/
-.content1 {
-    max-height: 400px;
-    width: 1018px;
-    border: 3px solid var(--bright-sun);
+/*creates label with link to work for each image*/
+.textx {
+    width: 100px;
+    height: 50px;
+    background-color: rgba(248, 103, 7, 0.6);
 }
-
-
-
 
 
 
@@ -131,46 +123,70 @@ aside {
 
 /*adjust image size to adjust layout for tablet screen size*/
 @media screen and (max-width: 992px) {
-    .content {
-        margin-top: auto;
+
+    /*inputs background image and sets size parameters*/
+    #top {
+        background-image: url("./image/workplaceholder5.jpg");
+        min-width: 75%;
+        min-height: 400px;
+        width: 75%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 0%;
     }
 
-    .content1 {
-        max-height: 300px;
-        width: 508px;
-        margin-bottom: -30px;
-
-        border: 3px solid var(--bright-sun);
-
-    }
-
-
-    /*adjust contact info font size to match adjusted screen size*/
-    .contact-info {
-        font-size: 18px;
-
-    }
-
-    .contact-info li {
-        margin-right: 0px
-    }
+    /*inputs additional background image and sets size parameters*/
+    .normal-work {
+        background-image: url("./image/workplaceholder8.jpg");
+        min-width: 75%;
+        min-height: 400px;
+        width: 75%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: contain;
 
 
-    /*adjust contact info font size to match adjusted screen size*/
-    @media screen and (max-width: 768px) {
+        /*adjust contact info font size to match adjusted screen size*/
         .contact-info {
-            font-size: 16px;
-        }
-    }
+            font-size: 18px;
 
-    /* Small smartphones - adjust images size to single line */
-    @media screen and (max-width: 576px) {
-        .content1 {
-            max-width: 250px;
-            min-width: 250px;
-            Max-height: 250px;
-            min-height: 250px;
-
-            border: 3px solid var(--bright-sun);
         }
-    }
+
+        .contact-info li {
+            margin-right: 0px
+        }
+
+
+        /*adjust contact info font size to match adjusted screen size*/
+        @media screen and (max-width: 768px) {
+            .contact-info {
+                font-size: 16px;
+            }
+        }
+
+        /* Small smartphones - adjust images size to single line */
+        @media screen and (max-width: 576px) {
+
+            /*inputs background image and sets size parameters*/
+            #top {
+                background-image: url("./image/workplaceholder5.jpg");
+                min-width: 100%;
+                min-height: 400px;
+                width: 100%;
+                height: 400px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-left: 0%;
+            }
+
+            /*inputs additional background image and sets size parameters*/
+            .normal-work {
+                background-image: url("./image/workplaceholder8.jpg");
+                min-width: 100%;
+                min-height: 400px;
+                width: 100%;
+                height: 400px;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
